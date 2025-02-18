@@ -1,4 +1,4 @@
-package pages;
+package test;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

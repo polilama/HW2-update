@@ -1,21 +1,17 @@
 package hooks;
 
-
-import com.google.inject.Inject;
 import io.cucumber.java.After;
-import org.openqa.selenium.WebDriver;
-import scoped.GuiseScoped;
+import io.cucumber.java.Before;
+import driver.DriverManager;
 
 public class Hooks {
-    @Inject
-    private GuiseScoped scenarioScoped;
+    @Before
+    public void setUp() {
+        DriverManager.getDriver();
+    }
+
     @After
-    public void close(){
-        WebDriver driver = scenarioScoped.getDriver();
-
-        if(driver != null) {
-            driver.quit();
-        }
-
+    public void close() {
+        DriverManager.quitDriver();
     }
 }

@@ -16,9 +16,6 @@ public class GuiseScoped {
         this.driver = driver;
     }
 
-    public static void open() {
-    }
-
     public WebDriver getDriver() {
         if (driver == null) {
             driver = new ChromeDriver();
