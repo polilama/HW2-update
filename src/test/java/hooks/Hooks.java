@@ -5,13 +5,15 @@ import io.cucumber.java.Before;
 import driver.DriverManager;
 
 public class Hooks {
+    private final DriverManager driverManager = new DriverManager();
+
     @Before
     public void setUp() {
-        DriverManager.getDriver();
+        driverManager.getDriver();
     }
 
     @After
     public void close() {
-        DriverManager.quitDriver();
+        driverManager.quitDriver();
     }
 }

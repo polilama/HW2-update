@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import io.cucumber.java.ru.И;
 import io.cucumber.java.ru.Тогда;

@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import com.google.inject.Inject;
 import io.cucumber.java.ru.И;

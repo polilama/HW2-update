@@ -1,4 +1,5 @@
 #language: ru
+ # src/test/resources/features/feature_file.feature
 Функциональность: Работа с курсами на сайте Otus
 
   Сценарий: Поиск и выбор курса по названию
